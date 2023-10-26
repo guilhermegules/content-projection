@@ -1,7 +1,11 @@
 import reactLogo from "./assets/react.svg";
 import { Card } from "./components/Card";
+import { PortalComponent } from "./components/PortalComponent/PortalComponent";
+import { usePortal } from "./hooks/usePortal";
 
 function App() {
+  const element = usePortal("main-content");
+
   return (
     <section
       style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
@@ -12,6 +16,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+
       <Card>
         <Card.Header>
           <h2>My header</h2>
@@ -21,6 +26,17 @@ function App() {
           <p>Footer</p>
         </Card.Footer>
       </Card>
+
+      <div id="main-content" className="main-content">
+        main content
+      </div>
+
+      {element && (
+        <PortalComponent
+          elementOutlet={element}
+          reactNode={<h3>Sub header</h3>}
+        />
+      )}
     </section>
   );
 }
