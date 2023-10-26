@@ -11,3 +11,11 @@
   <p>Content</p>
   <p footer>Footer</p>
 </app-card>
+
+<div class="main-content">
+  <p>Main content</p>
+
+  <div *appPortalOutlet="'my-portal'"></div>
+</div>
+
+<h3 *appPortal="'my-portal'">My sub header</h3>
