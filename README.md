@@ -4,7 +4,7 @@ Project made for demonstrate the different ways to project content with React an
 
 This project was made for an Article on medium and dev community:
 
-- [Projeção de conteúdo no Front-end PT-BR]()
+- [Projeção de conteúdo no Front-end PT-BR](https://medium.com/@guilhermegules/proje%C3%A7%C3%A3o-de-conte%C3%BAdo-no-front-end-ac92d7d9a558)
 - [Content projection in Front-end EN - Under construction]()
 
 ## React
